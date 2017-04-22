@@ -1398,6 +1398,7 @@ $baseurl: '{{ site.baseurl }}/images';
 				height: inherit;
 				line-height: inherit;
 
+				img {max-height: 52px}
 				@include breakpoint(small) {
 					font-size: 0.8em;
 				}
@@ -1471,7 +1472,10 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			h1 {
 				@include vendor('pointer-events', 'none');
-				opacity: 0;
+				opacity: 1;
+				a img{
+					max-height:52px;
+				}
 			}
 		}
 	}
@@ -1755,6 +1759,9 @@ $baseurl: '{{ site.baseurl }}/images';
 			list-style: none;
 			padding: 0;
 			text-transform: uppercase;
+			li span img{
+				max-height: 48px;
+			}
 
 			li {
 				border-left: solid 1px _palette(fg-light);
