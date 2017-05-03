@@ -1481,6 +1481,7 @@ $baseurl: '{{ site.baseurl }}/images';
 				a img{
 					max-height:52px;
 					margin-left:20%;
+					vertical-align: middle;
 					@include breakpoint(xlarge) {
 						max-height:48px;
 					}
