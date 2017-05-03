@@ -1483,19 +1483,19 @@ $baseurl: '{{ site.baseurl }}/images';
 					margin-left:20%;
 					vertical-align: middle;
 					@include breakpoint(xlarge) {
-						max-height:48px;
-					}
-
-					@include breakpoint(large) {
 						max-height:40px;
 					}
 
+					@include breakpoint(large) {
+						max-height:34px;
+					}
+
 					@include breakpoint(small) {
-						max-height: 36px;
+						max-height: 28px;
 
 					}
 					@include breakpoint(xsmall) {
-						max-height: 28px;
+						max-height: 24px;
 					}
 				}
 			}
